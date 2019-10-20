@@ -1,3 +1,4 @@
+<!-- Created by Kostya Tkachuk at 20.10.2019 -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +11,8 @@
 
         <div class="wrapper">
             <form class="calc" id="form">
-                <input type="text" name="" id="display" readonly>
+                <input type="text" name="" id="display" readonly maxlength="20">
+                <div class="result" id="result"></div>
                 <div class="controls">
                     <div class="row">
                         <div class="col">
@@ -51,7 +53,7 @@
                             <input type="button" value="9">
                         </div>
                         <div class="col">
-                            <input type="button" value="X">
+                            <input type="button" value="*">
                         </div>
                     </div>
                     <div class="row">
@@ -59,9 +61,10 @@
                             <input type="button" value="0">
                         </div>
                         <div class="col">
-   
+                            <input type="button" value="00">
                         </div>
                         <div class="col">
+                            <input type="button" value="000">
                         </div>
                         <div class="col">
                             <input type="button" value="/">

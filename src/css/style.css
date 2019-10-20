@@ -1,4 +1,5 @@
-﻿.wrapper {
+﻿/* Created by Kostya Tkachuk at 20.10.2019 */
+.wrapper {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -6,6 +7,7 @@
 }
 
 .calc {
+    position: relative;
     border-radius: 10px;
     border: 2px solid #607d8b;
     background-color: #cfd8dc;
@@ -65,4 +67,11 @@
 
 .col > input:hover, .col > input:focus {
     background-color: #fff;
+}
+
+.result {
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    font-size: 12px;
 }
